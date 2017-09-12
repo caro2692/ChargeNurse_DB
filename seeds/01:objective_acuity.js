@@ -1,8 +1,8 @@
 
 exports.seed = function(knex, Promise) {
-  return knex.raw('TRUNCATE objective_acuity CASCADE; ALTER SEQUENCE objective_acuity_id_seq restart with 12')
+  return knex.raw('TRUNCATE objective_acuity CASCADE; ALTER SEQUENCE objective_acuity_id_seq restart with 13')
     .then(function () {
-      return knex('subjective_acuity').insert([
+      return knex('objective_acuity').insert([
         {
           id: 1,
           name:'Complete Care?',
@@ -49,11 +49,6 @@ exports.seed = function(knex, Promise) {
           data_type: 'integar'
         },
         {
-          id: 9,
-          name:'Morse fall risk scale',
-          data_type: 'integar'
-        },
-        {
           id: 10,
           name:'Diagnosis',
           data_type: 'string'
@@ -62,6 +57,11 @@ exports.seed = function(knex, Promise) {
           id: 11,
           name:'date_of_birth',
           data_type: 'date'
+        },
+        {
+          id: 12,
+          name:'Morse fall risk scale',
+          data_type: 'integar'
         }
       ]);
     });

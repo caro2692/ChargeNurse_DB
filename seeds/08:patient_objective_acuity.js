@@ -1,8 +1,8 @@
 
 exports.seed = function(knex, Promise) {
-  return knex.raw('TRUNCATE nurse_objective_acuity CASCADE; ALTER SEQUENCE nurse_objective_acuity_id_seq restart with 1')
+  return knex.raw('TRUNCATE patient_objective_acuity CASCADE; ALTER SEQUENCE patient_objective_acuity_id_seq restart with 1')
     .then(function () {
-      return knex('nurse_objective_acuity').insert([
+      return knex('patient_objective_acuity').insert([
         {
           patient_id: 1,
           objective_acuity_id: 3,
