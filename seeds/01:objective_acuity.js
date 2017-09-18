@@ -5,37 +5,37 @@ exports.seed = function(knex, Promise) {
       return knex('objective_acuity').insert([
         {
           id: 1,
-          name:'Complete Care?',
+          name:'Complete Care',
           data_type: 'boolean'
         },
         {
           id: 2,
-          name:'End of life?',
+          name:'End of life',
           data_type: 'boolean'
         },
         {
           id: 3,
-          name:'Bone Marrow?',
+          name:'Bone Marrow',
           data_type: 'boolean'
         },
         {
           id: 4,
-          name:'Neutropenic?',
+          name:'Immunosuppressed',
           data_type: 'boolean'
         },
         {
           id: 5,
-          name:'Infectious?',
+          name:'Infectious',
           data_type: 'boolean'
         },
         {
           id: 6,
-          name:'Confused?',
+          name:'Confused',
           data_type: 'boolean'
         },
         {
           id: 7,
-          name:'Contact Isolation?',
+          name:'Contact Isolation',
           data_type: 'boolean'
         },
         {
