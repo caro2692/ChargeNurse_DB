@@ -40,7 +40,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 8,
-          name:'CBC',
+          name:' ',
           data_type: 'integar'
         },
         {

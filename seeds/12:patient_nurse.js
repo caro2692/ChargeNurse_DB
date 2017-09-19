@@ -3,6 +3,26 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       return knex('patient_nurse').insert([
         {
+          shift_id: 1,
+          nurse_id: 1,
+          patient_id: 1
+        },
+        {
+          shift_id: 1,
+          nurse_id: 3,
+          patient_id: 2
+        },
+        {
+          shift_id: 1,
+          nurse_id: 5,
+          patient_id: 3
+        },
+        {
+          shift_id: 1,
+          nurse_id: 2,
+          patient_id: 4
+        },
+        {
           shift_id: 2,
           nurse_id: 1,
           patient_id: 1

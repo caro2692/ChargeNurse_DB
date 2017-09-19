@@ -17,7 +17,8 @@ exports.seed = function(knex, Promise) {
           last_name: 'Williams',
           hospital_id: 'x73kd9z',
           profile_img: '',
-          unit_nurse_since: '2011-08-01'
+          unit_nurse_since: '2011-08-01',
+          is_preceptor: true
         },
         {
           id: 3,
@@ -73,7 +74,8 @@ exports.seed = function(knex, Promise) {
           last_name: 'Jones',
           hospital_id: 'x8jd56h',
           profile_img: '',
-          unit_nurse_since: '2016-12-21'
+          unit_nurse_since: '2016-12-21',
+          is_preceptor: true
         },
         {
           id: 10,

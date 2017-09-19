@@ -8,6 +8,7 @@ exports.up = function(knex, Promise) {
     table.string('hospital_id').notNullable();
     table.string('profile_img');
     table.date('unit_nurse_since').notNullable();
+    table.boolean('is_preceptor').defaultTo(false);
   });
 };
 
